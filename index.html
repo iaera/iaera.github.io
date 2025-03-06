@@ -57,8 +57,11 @@ a {
 <div id="iaera">
 <h1>iae<span class="ra-kerning">ra</span></h1>
 <p id="social"><a href="https://twitter.com/iaera">@iaera</a></p>
-<p id="copyright">copyright &copy; 2016 iaera.</p>
+<p id="copyright">copyright &copy; <span id="year"></span> iaera.</p>
 </div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
 
