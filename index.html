@@ -8,6 +8,13 @@ body {
   font-size: 16px;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   background-color: hsla(220, 70%, 97%, 1);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   margin: 0;
@@ -32,32 +39,20 @@ a {
   color: inherit;
   text-decoration: none;
 }
-#iaera {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  width:20em;
-  height:12em;
-  margin-top: -6em; /* set to a negative number 1/2 of your height */
-  margin-left: -10em; /* set to a negative number 1/2 of your width */
-  text-align: center;
-}
 .ra-kerning {
   letter-spacing: -0.04em;
-}
-#copyright {
-  font-size: 0.75em;
 }
 </style>
 </head>
 <body>
 <div id="iaera">
-<h1>iae<span class="ra-kerning">ra</span></h1>
-<p id="copyright">copyright &copy; <span id="year"></span> iaera.</p>
+  <h1>iae<span class="ra-kerning">ra</span></h1>
+</div>
+<div id="copyright">
+  <p>copyright &copy; <span id="year"></span> iaera.</p>
 </div>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
-
